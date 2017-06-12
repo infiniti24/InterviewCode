@@ -1,5 +1,6 @@
 package com.shoumo.geek.dynamic.programming;
 
+
 public class SumOfDigitsToSum {
 
 	private int lookup[][] = new int[101][50001];

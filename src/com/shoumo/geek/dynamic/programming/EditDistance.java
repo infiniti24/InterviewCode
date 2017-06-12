@@ -39,6 +39,6 @@ public class EditDistance {
 
 	public static void main(String[] args) {
 		System.out.println("Min cost to edit is:"
-				+ new EditDistance().editDistance("Sunday", "Saturday"));
+				+ new EditDistance().editDistance("aaaaa", "za"));
 	}
 }

@@ -23,6 +23,6 @@ public class CoinChange {
 	public static void main(String[] args) {
 		int arr[] = { 1, 2, 3 };
 		System.out.println("Number of ways are:"
-				+ new CoinChange().countWays(arr, arr.length, 4));
+				+ new CoinChange().countWays(arr, arr.length, 5));
 	}
 }

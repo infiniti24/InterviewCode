@@ -12,6 +12,9 @@ public class KDistanceFromLeaf {
 		levelNodeList[pathLen] = new LevelNode(node.data, false);
 		pathLen++;
 
+		/**
+		 * Leaf node has been reached
+		 */
 		if (Objects.isNull(node.left) && Objects.isNull(node.right)
 				&& pathLen - distance - 1 >= 0
 				&& !levelNodeList[pathLen - distance - 1].isVisited) {
@@ -26,7 +29,7 @@ public class KDistanceFromLeaf {
 	}
 
 	public static void main(String[] args) {
-		new KDistanceFromLeaf().printKDistanceFromLeaf(BinaryTree.getTree(), 0,
+		new KDistanceFromLeaf().printKDistanceFromLeaf(BinaryTree.getTree(), 2,
 				0, new KDistanceFromLeaf.LevelNode[1000]);
 	}
 

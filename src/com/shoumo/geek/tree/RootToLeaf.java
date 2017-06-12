@@ -10,8 +10,7 @@ public class RootToLeaf {
 		if (Objects.isNull(node)) {
 			return;
 		}
-		queue.add(index, node.data);
-		index++;
+		queue.add(index++, node.data);
 		if (Objects.isNull(node.left) && Objects.isNull(node.right)) {
 			printData(queue, index);
 		} else {
